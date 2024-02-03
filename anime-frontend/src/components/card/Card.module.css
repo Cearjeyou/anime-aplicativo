@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid red;
+    border-radius: 1rem;
+    text-align: center;
+    width: 17vw;
+    height: 70vh;
+}
+
+.card__img {
+    /* margin: 1rem; */
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card__name {
+    font-weight: bold;
+    font-size: var(--font-size-m);
+    color: var(--primary-color);
+    text-wrap: balance;
+}

@@ -1,0 +1,5 @@
+.slider {
+    display: grid;
+    border: 1px solid blue;
+    height: 50vh;
+}
