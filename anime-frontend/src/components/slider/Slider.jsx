@@ -12,7 +12,8 @@ import './slider.css'
 import {Virtual, Navigation, Pagination, Grid, EffectCoverflow } from 'swiper/modules';
 
 export default function Slider(props) {
-    const {data} = props
+    const {data, scores} = props
+    console.log(scores)
 
     return (
     <Swiper
@@ -35,6 +36,7 @@ export default function Slider(props) {
                     data.map((anime, index) => (
                         <SwiperSlide key={anime.title} virtualIndex={index}>
                             <Card  imgUrl={anime.images.webp?.image_url} imgDescrip="img" name={anime.title} score={anime.score}></Card>
+                            <div>{scores?.filter(item => item.idAnime == anime.mal_id)[0]?.group}</div>
                         </SwiperSlide>
                     ))
                     : <p>Cargado</p>}
