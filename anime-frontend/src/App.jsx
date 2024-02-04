@@ -1,5 +1,5 @@
 import './App.css'
-import Slider from './components/slider/Slider'
+import Searcher from './components/searcher/Searcher'
 import Home from './pages/home/Home'
 import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom'
 
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>} >
           <Route path='/' element={<Navigate to="/home"></Navigate>}></Route>
-          <Route path='home' element={<Slider></Slider>}></Route>
+          <Route path='home' element={<Searcher></Searcher>}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,21 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 25%;
+  /* height: 300px; */
+}
+
+@media only screen and (max-width: 1000px) {
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    /* height: 300px; */
+  }
+}
