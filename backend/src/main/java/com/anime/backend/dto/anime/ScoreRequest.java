@@ -1,4 +1,11 @@
 package com.anime.backend.dto.anime;
 
-public class AnimeRequest {
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class ScoreRequest {
+    private String idAnime;
+    private Double score;
 }
