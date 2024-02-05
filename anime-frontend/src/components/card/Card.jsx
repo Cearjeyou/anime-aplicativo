@@ -9,15 +9,13 @@ const getName = (name) => {
 }
 
 export default function Card(props) {
-    const {imgUrl, name, imgDescrip, score} = props
+    const {imgUrl, name, imgDescrip, anime, handleButton} = props
     return (
         <div className={styles.card}>
             <img className={styles['card__img']} src={imgUrl} alt={imgDescrip}/>
             <p className={styles['card__name']}>{getName(name)}</p>
-            <p>{score}</p>
             <div className={styles['card__containerButtons']}>
-                <button>Detalle</button>
-                <button>Guardar</button>
+                <button className={styles['card__button']} onClick={() => handleButton(anime)}>Favorite</button>
             </div>
         </div>
     )

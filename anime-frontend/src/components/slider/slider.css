@@ -11,6 +11,18 @@
   /* height: 300px; */
 }
 
+.swiper__texts {
+  /* border: 1px solid red; */
+  /* text-align: center; */
+  font-size: var(--font-size-s);
+  text-wrap: balance;
+  color: var(--primary-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
   .swiper-slide {
     background-position: center;

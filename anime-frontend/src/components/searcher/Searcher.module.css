@@ -1,0 +1,26 @@
+.container__searcher {
+    /* border: 1px solid red; */
+    text-align: center;
+    height: 2.5rem;
+}
+
+.container__searcher input {
+    width: 35em;
+}
+
+.container__searcher button {
+    border: 1.5px solid var(--primary-color-500);
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.container__searcher button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.container__searcher input, button {
+    box-sizing: border-box;
+    height: 100%;
+}

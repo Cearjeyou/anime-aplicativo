@@ -1,5 +1,6 @@
 :root {
   --primary-color: rgb(255, 39, 126);
+  --primary-color-500: rgba(255, 39, 126, 0.5);
   --font-size-xs: 0.7rem;
   --font-size-s: 1rem;
   --font-size-m: 1.5rem;

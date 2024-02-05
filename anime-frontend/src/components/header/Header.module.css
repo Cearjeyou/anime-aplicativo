@@ -1,0 +1,46 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 0.5rem;
+}
+
+.navbar__buttons {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.navbar__buttons button {
+    height: 50%;
+    border: 1px solid var(--primary-color-500);
+    border-radius: 0.5rem;
+}
+
+.navbar__buttons button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.modal__content {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal__content button {
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color-500);
+}
+
+.modal__content button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: cadetblue;
+}

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { API_URL_ANIME, API_URL_BACKEND } from "../../constants/contants"
 import Slider from "../slider/Slider"
+import styles from './Searcher.module.css'
 
 const getData = (setData, name, setScores, apiUrl) => {
     fetch(`${apiUrl}/anime?q=${name}&sfw`, {
@@ -67,10 +68,10 @@ export default function Searcher() {
     }, [])
 
     return (
-        <section>
-            <form onSubmit={handleSearch}>
-                <input type="text" placeholder="Type the name of anime" value={name} onChange={handleChange}/>
-                <button type="submit">Buscar</button>
+        <section className={styles.container}>
+            <form onSubmit={handleSearch} className={styles['container__searcher']}>
+                <input type="text" placeholder="Type the name of an anime" value={name} onChange={handleChange}/>
+                <button type="submit">search</button>
             </form>
             <Slider data={data} scores={scores}></Slider>
         </section>
